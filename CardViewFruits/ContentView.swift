@@ -12,10 +12,10 @@ struct ContentView: View {
         ScrollView(.horizontal) {
             HStack(spacing: 20) {
                 CardView(title: "🥭", backgroundColor: Color.yellow.gradient)
-                CardView(title: "🥭", backgroundColor: Color.yellow.gradient)
-                CardView(title: "🥭", backgroundColor: Color.yellow.gradient)
-                CardView(title: "🥭", backgroundColor: Color.yellow.gradient)
-                CardView(title: "🥭", backgroundColor: Color.yellow.gradient)
+                CardView(title: "🍎", backgroundColor: Color.orange.gradient)
+                CardView(title: "🥝", backgroundColor: Color.blue.gradient)
+                CardView(title: "🍌", backgroundColor: Color.green.gradient)
+                CardView(title: "🍓", backgroundColor: Color.pink.gradient)
             }
         }
         .padding()
