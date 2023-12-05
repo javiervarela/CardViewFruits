@@ -10,20 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            CardView()
+            CardView(title: "🥭", backgroundColor: Color.yellow.gradient)
         }
         .padding()
     }
 }
 
 struct CardView: View {
+    let title: String
+    let backgroundColor: AnyGradient
+    
     var body: some View {
         VStack {
-            Text("🥭")
-                .font(.system(size: 200))
+            Text(title).font(.system(size: 200))
         }
         .frame(width: 250, height: 400)
-        .background(.yellow)
+        .background(backgroundColor)
         .clipShape(RoundedRectangle(cornerRadius: 25))
     }
 }
