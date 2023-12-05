@@ -22,7 +22,9 @@ struct CardView: View {
             Text("🥭")
                 .font(.system(size: 200))
         }
-        .padding()
+        .frame(width: 250, height: 400)
+        .background(.yellow)
+        .clipShape(RoundedRectangle(cornerRadius: 25))
     }
 }
 
