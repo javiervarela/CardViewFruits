@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 20) {
                 CardView(title: "🥭", backgroundColor: Color.yellow.gradient)
                 CardView(title: "🍎", backgroundColor: Color.orange.gradient)
