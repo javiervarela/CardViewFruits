@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            CardView(title: "🥭", backgroundColor: Color.yellow.gradient)
+        ScrollView(.horizontal) {
+            HStack(spacing: 20) {
+                CardView(title: "🥭", backgroundColor: Color.yellow.gradient)
+            }
         }
         .padding()
     }
